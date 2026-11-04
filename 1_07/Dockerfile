@@ -11,4 +11,4 @@ COPY script.sh /script.sh
 RUN chmod +x /script.sh
 
 # When running Docker run the command will be ./script.sh
-CMD ["./script.sh"]
+ENTRYPOINT ["./script.sh"]
